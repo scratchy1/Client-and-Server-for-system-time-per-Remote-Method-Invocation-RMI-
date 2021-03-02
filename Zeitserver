@@ -1,0 +1,5 @@
+public class ZeitServer {
+public static void main(String[] args) throws Exception {
+java.rmi.Naming.rebind("Uhr", new ZeitImpl());
+}
+}
