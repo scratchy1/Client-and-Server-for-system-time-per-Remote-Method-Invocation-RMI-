@@ -1,0 +1,10 @@
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+public class ZeitImpl extends UnicastRemoteObject
+implements Zeit {
+public ZeitImpl() throws RemoteException { }
+public String zeit() throws RemoteException {
+return java.text.DateFormat.getDateTimeInstance().
+format(new java.util.Date());
+}
+}
