@@ -1,0 +1,7 @@
+public class ZeitClient {
+public static void main(String[] args) throws Exception {
+Zeit uhr = (Zeit) java.rmi.Naming.lookup("rmi://localhost/Uhr");
+String aktuelleZeit = uhr.zeit();
+System.out.println(aktuelleZeit);
+}
+}
